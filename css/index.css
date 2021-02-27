@@ -1,0 +1,94 @@
+:root {
+    --main-dark-color: #004156;
+    --main-bg-color: #1A626F;
+    --main-text-color: #E8FFFF;
+}
+
+body {
+    background-color: var(--main-bg-color); //#168DA4;
+    color: var(--main-text-color);
+}
+
+
+/* ----GENERAL----*/
+.center {
+    margin: auto;
+    width: 75%;
+    padding: 10px;
+}
+
+
+/* ----TOP NAV---- */
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: var(--main-dark-color);
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: right;
+    color: var(--main-text-color);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav .logo {
+    float: left;
+    color: var(--main-text-color);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: var(--main-text-color);
+    color: var(--main-dark-color);
+}
+
+
+/* ----TEXT----*/
+
+.text {
+    color: var(--main-text-color);
+    font-size: 17px;
+    padding: 8px 12px;
+    /*position: absolute;*/
+    bottom: 8px;
+    /*width: 100%;*/
+    text-align: center;
+}
+
+
+/* ----SLIDE SHOW---- */
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}

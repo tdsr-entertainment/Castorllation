@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Castorllation</title>
+
+    <link rel="stylesheet" href="./css/index.css"/>
+<!--    <link rel="stylesheet" href="./css/indx.css"/>-->
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+
+<!--TOP BAR-->
+<div class="topnav" style="">
+    <a href="https://unity3d.com/legal/privacy-policy" target="_blank">Privacy Policy</a>
+    <a class="logo" href="#main" style="max-height: 53px; padding: 0"><img src="./Images/logo.png" style="max-height: inherit"></a>
+</div>
+
+<br>
+
+<!--Description and screenshots-->
+<div id="main" class="center">
+    <div class="center" style="max-width: 600px">
+        <div class="text"><h1>Play Castorllation!</h1></div>
+
+        <div class="text">Fly away to the open space as far as you can!</div>
+
+        <div class="text">
+            Don’t let those asteroids hit you, or you’ll explode!
+            And keep an eye for your fuel, you can’t get far without fuel!
+        </div>
+        <div class="text">Good luck on your journey, Captain!</div>
+
+        <div class="center">
+            <a  href=''>
+                <img style="max-width: 300px; height: auto" alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/>
+            </a>
+        </div>
+
+<!--        <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>-->
+    </div>
+
+    <div class="w3-content w3-section">
+        <img class="center mySlides fade" src="./Images/Screenshot.png" style="height:654px; width: auto">
+        <img class="center mySlides fade" src="./Images/Screenshot2.png" style="height:654px; width: auto">
+        <img class="center mySlides fade" src="./Images/Screenshot3.png" style="height:654px; width: auto">
+    </div>
+</div>
+
+<br>
+
+</body>
+<script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        slides[slideIndex-1].style.display = "block";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+
+</script>
+</html>
