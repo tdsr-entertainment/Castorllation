@@ -26,6 +26,7 @@ body {
     overflow: hidden;
     position: fixed;
     width: 100%;
+    z-index: 9999;
 }
 
 /* Style the links inside the navigation bar */
@@ -52,6 +53,16 @@ body {
 .topnav a:hover {
     background-color: var(--main-text-color);
     color: var(--main-dark-color);
+}
+
+/* ----Footer----*/
+
+footer {
+    text-align: center;
+    padding: 5px;
+    background-color: var(--main-dark-color);
+    color: var(--main-text-color);
+    font-size: 12px;
 }
 
 
